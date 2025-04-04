@@ -12,25 +12,25 @@ public class TesteLivro {
         Scanner leitorNumerico = new Scanner(System.in);
         //Criando um objeto do tipo br.com.fiap.models.Editora chamado novatec
         Editora novatec = new Editora();
-        novatec.nome = "Novatec";
-        novatec.site = "www.novatec.com";
-        novatec.telefone = "11568958995";
+        novatec.setNome("Novatec");
+        novatec.setSite("www.novatec.com");
+        novatec.setTelefone("11568958995");
 
         //Criar um objeto -> Instanciar um objeto
     //  Tipo  nomeObjeto = new Tipo();
         Livro meuLivro = new Livro();
-        meuLivro.titulo = "UML 2";
-        meuLivro.autor = "Gilleanes Guedes";
-        meuLivro.editora = novatec;
-        meuLivro.preco = 50;
-        meuLivro.paginas = 484;
+        meuLivro.setTitulo("UML 2");
+        meuLivro.setAutor("Gilleanes Guedes");
+        meuLivro.setEditora(novatec);
+        meuLivro.setPreco(50);
+        meuLivro.setPaginas(484);
        // meuLivro.tipoCapa = br.com.fiap.enums.TipoCapaEnum.DURA;
-        meuLivro.resumo = "UML abordagem prática....";
+        meuLivro.setResumo("UML abordagem prática....");
         meuLivro.exibirLivro();
 
         Livro livroDaGiovanna = new Livro(novatec);
-        livroDaGiovanna.titulo = "Harry Potter e a pedra filosofal";
-        livroDaGiovanna.autor = "J K ";
+        livroDaGiovanna.setTitulo("Harry Potter e a pedra filosofal");
+        livroDaGiovanna.setAutor("J K ");
 
         Livro livro = new Livro();
         System.out.println("Informe o título do livro");
