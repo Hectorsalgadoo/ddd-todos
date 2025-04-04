@@ -9,12 +9,13 @@ public class Anime {
     int numeroTemporadas;
     String mensagem;
 
-
+    //construtor
     public Anime (String nome, int classificacaoIndicativa){
         this.nome=nome;
         this.classificacaoIndicativa=classificacaoIndicativa;
-
     }
+
+
     public Anime(){}
 
     public int mediaEpisodioPorTemporada(){
@@ -42,5 +43,6 @@ public class Anime {
     public void exibirDadosAnime(){
          mensagem = ("Nome de anime: " +nome + "\nDe acordo com o ministério da justiça esse anime é " +exibirClassificacao()+ "\nA média de episódios por temporada é " +mediaEpisodioPorTemporada());
     }
+
 
 }

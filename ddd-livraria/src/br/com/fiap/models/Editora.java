@@ -1,7 +1,9 @@
+package br.com.fiap.models;
+
 public class Editora {
-    String nome;
-    String site;
-    String telefone;
+    private String nome;
+    public String site;
+    public String telefone;
 
     /*
     * Construtor -> descreve como o objeto sera criado
@@ -19,7 +21,7 @@ public class Editora {
     }
 
     public void exibirEditora(){
-        System.out.println("Editora " + nome);
+        System.out.println("br.com.fiap.models.Editora " + nome);
         System.out.println("Site: " + site);
         System.out.println("Telefone: " + telefone);
     }
