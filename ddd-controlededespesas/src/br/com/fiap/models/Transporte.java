@@ -26,7 +26,7 @@ public class Transporte extends  Despesas{
     }
 
     @Override
-    public double calcularDespesa() {
+    public void calcularDespesa() {
         int pedagio = 0;
         if (pedagio==valorPedagio){
             valorTotal=(kmPercorrida*3)+valorPedagio;
@@ -34,7 +34,7 @@ public class Transporte extends  Despesas{
         else
             valorTotal=(kmPercorrida*3);
 
-        return valorTotal;
+
     }
 
     @Override
