@@ -2,11 +2,12 @@ package br.com.fiap.models;
 
 
 import br.com.fiap.enums.TipoCapaEnum;
+import br.com.fiap.interfaces.Exemplar;
 
 import java.time.LocalDateTime;
 import java.util.Random;
 
-public abstract class Livro {
+public abstract class Livro implements Exemplar {
     //Atributo tipo nomeAtributo;
     protected String titulo;
     private String autor;
@@ -116,6 +117,6 @@ public abstract class Livro {
     }
 
     public boolean ehMaisCaroQue(Livro outroLivro){
-        return preco>outroLivro.preco;
+        return preco > outroLivro.preco;
     }
 }

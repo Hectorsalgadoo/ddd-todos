@@ -1,21 +1,15 @@
 package br.com.fiap.models;
 
+import br.com.fiap.interfaces.Exemplar;
+
 public class Carrinho {
 
-    public void adicionarItem(Livro livro){
-        if(livro instanceof LivroFisico)
-        valorTotal=+livro.getPreco();
+    private double valorTotal;
+
+    public void adicionarItem(Exemplar item){
+        valorTotal += item.getPreco();
         //if(livro instanceof SubClasse)
     }
-
-    public void adicionarItem(LivroDigital livroDigital){
-        //adiciono o livroDigital
-    }
-    public void adicionarItem(LibroBolso libroBolso){
-        //adiciono o livroBolso
-    }
-
-    private double valorTotal;
 
     public double getValorTotal() {
         return valorTotal;
