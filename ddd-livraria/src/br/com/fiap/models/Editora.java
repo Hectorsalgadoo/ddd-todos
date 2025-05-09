@@ -5,33 +5,12 @@ public class Editora {
     private String site;
     private String telefone;
 
-    /*
-    * Construtor -> descreve como o objeto sera criado
-    * deve ter obrigatoriamente o nome da classe
-    * nao tem retorno
-    * no momento em que cira um construtor o padrao deixa de existir
-    * */
-
-    public Editora(String nome){
-        this.nome=nome;
+    //Métodos getters e setters
+    public String getNome(){
+        return nome;
     }
-
-    public Editora(){
-
-    }
-
-    public void exibirEditora(){
-        System.out.println("br.com.fiap.models.Editora " + nome);
-        System.out.println("Site: " + site);
-        System.out.println("Telefone: " + telefone);
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
+    public void setNome(String nome){
+        this.nome = nome;
     }
 
     public String getSite() {
@@ -42,11 +21,27 @@ public class Editora {
         this.site = site;
     }
 
-    public String getNome() {
-        return nome;
+    public String getTelefone() {
+        return telefone;
     }
 
-    public void setNome(String nome) {
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+    /*
+    * Construtor -> descrever como o objeto será criado
+    * Deve ter obrigatoriamente o nome da classe
+    * Não tem retorno
+    * No momento em que eu crio um construtor o padrão deixa de existir
+    * */
+
+    public Editora(String nome){
         this.nome = nome;
+    }
+    public Editora(){}
+    public void exibirEditora(){
+        System.out.println("br.com.fiap.models.Editora " + nome);
+        System.out.println("Site: " + site);
+        System.out.println("Telefone: " + telefone);
     }
 }

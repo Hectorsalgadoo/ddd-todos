@@ -8,6 +8,18 @@ public class GerenciadorDespesa extends Despesas{
     private double totalDiaria;
     private double totalDespesa;
 
+
+
+    public void analisarDespesa(Despesas despesa){
+        if(despesa instanceof Transporte){
+            qtdeTransporte++;
+            totalTransporte+=despesa.getValorTotal();
+        } else if (despesa instanceof Diaria) {
+            qtdeDiaria++;
+            totalDiaria+=despesa.getValorTotal();
+
+        }
+    }
     @Override
     public void cadastrarDespesa() {
 
