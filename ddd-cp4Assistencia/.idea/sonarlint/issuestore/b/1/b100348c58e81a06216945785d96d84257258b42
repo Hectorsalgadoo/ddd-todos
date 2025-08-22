@@ -1,0 +1,23 @@
+
+ƒ
+java:S1854"@Remove this useless assignment to local variable "equipamentos".(ô¬¥Â8œ¶¼¾Œ3J$95052509-8d81-4d28-9f59-62e68410c234
+z
+java:S1172"2Remove this unused method parameter "numeroSerie".(şÅÜ÷üÿÿÿÿ8¶¼¾Œ3J$c3c6bfd4-8f6b-45e4-901f-c8684c687d92
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8Ïìˆ¾Œ3J$2e857186-d399-4bc2-a5ec-91ee46df39a2
+t
+java:S1481"1Remove this unused "equipamentos" local variable.(ô¬¥Â8Ÿ¶¼¾Œ3J$0e62fdf1-3a9b-43a3-97d2-10bf3398c18f
+n
+java:S1172"+Remove this unused method parameter "path".(şú©á8Î´ß½Œ3J$6d4b483a-e731-4ddb-83fc-5b4553b8d200
+q
+java:S1481")Remove this unused "gson" local variable.(È™ëûÿÿÿÿ8û—¾¾Œ3J$c8fb54da-df82-4ad9-89ca-7b15beddb009
+r	java:S106"+Replace this use of System.out by a logger.(ëÊáùÿÿÿÿ8Õìˆ¾Œ3J$825003c4-9a58-4992-8148-34c9185a28d6
+r	java:S106!"+Replace this use of System.out by a logger.(Ç™”üÿÿÿÿÿ8°â‰¾Œ3J$e6b8e14a-0e74-4bf4-a4fa-2518472d59e0
+s
+java:S1172$"+Remove this unused method parameter "path".(‡Óõşÿÿÿÿ8Ä²“¾Œ3J$0070e4f5-3870-4852-a739-1cf1a400e146
+l
+java:S1481%")Remove this unused "gson" local variable.(şëŒ8“¡À¾Œ3J$7ff99ce6-9afb-4c19-8a2e-c4c62cea51b5
+p	java:S108&")Either remove or fill this block of code.(´­¿±ùÿÿÿÿ8•¡À¾Œ3J$73a5ade1-5473-415b-a0c9-aa71f4019ded
+m	java:S106)"+Replace this use of System.out by a logger.(àì¥8ù¤‘¾Œ3J$7beadac6-a781-41db-ae5e-edee9c9e9fac
+r	java:S1061"+Replace this use of System.out by a logger.(ÈÃÎüÿÿÿÿ8¼Á›¾Œ3J$76938b21-4e77-42e6-82a0-17cae193332e
+m	java:S1064"+Replace this use of System.err by a logger.(Ñà‡”8¼Á›¾Œ3J$0b1a4429-b24c-46e5-beba-0fe6ea561af8
