@@ -1,10 +1,15 @@
 package br.com.fiap.dao;
 
+import br.com.fiap.enums.ClassificacaoIndicativaEnum;
+import br.com.fiap.enums.GeneroEnum;
 import br.com.fiap.models.Filmes;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class FilmeDao {
     private Connection conexao;
@@ -38,5 +43,39 @@ public class FilmeDao {
         }catch (SQLException e){
             e.printStackTrace();
         }
+    }
+
+
+    //buscar todos os filmes caastrados
+    public List<Filmes> listarFilme(){
+        List<Filmes> listaFilme = new ArrayList<>();
+        conexao = ConnectionFactory.obterConexao();
+        PreparedStatement ps= null;
+        try{
+            ps = conexao.prepareStatement("SELECT * FROM tbl_filme order by tx_nome ");
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()){
+                Filmes filme =new Filmes();
+                filme.setId_filme(rs.getLong(1));
+                filme.setTx_nome(rs.getString(2));
+                filme.setNr_duracao(rs.getInt(3));
+                filme.setTp_genero(GeneroEnum.valueOf(rs.getString(4)));
+                filme.setTp_classificacao(ClassificacaoIndicativaEnum.valueOf(rs.getString(5)));
+                filme.setNr_ano(rs.getInt(6));
+                filme.setTx_capa(rs.getString(7));
+                filme.setTx_diretor(rs.getString(8));
+                filme.setTx_elenco(rs.getString(9));
+                filme.setTx_descricao(rs.getString(10));
+                filme.setNr_avaliacao(rs.getDouble(11));
+                listaFilme.add(filme);
+
+            }
+            ps.close();
+            conexao.close();
+
+        }catch (SQLException e){
+            throw new RuntimeException(e);
+        }
+        return listaFilme;
     }
 }
